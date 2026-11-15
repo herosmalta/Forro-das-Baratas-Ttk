@@ -1,0 +1,20 @@
+{
+  "name": "arraia-das-baratas-live",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Jogo interativo para lives do TikTok (chat, curtidas, presentes, seguidores e compartilhamentos)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check lib/tiktok-events.js && node scripts/check-html.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "tiktok-live-connector": "^2.5.0"
+  }
+}
